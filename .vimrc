@@ -58,7 +58,7 @@ set scrolloff=6
 
 " append to matchpairs list
 set matchpairs+=<:>
-set matchpairs+={%:%}
+set matchpairs+={\%:\%}
 
 " set screenline to always be visible
 set laststatus=2
