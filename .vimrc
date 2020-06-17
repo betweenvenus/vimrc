@@ -20,6 +20,12 @@ Plug 'tpope/vim-endwise'
 
 Plug 'jiangmiao/auto-pairs'
 
+Plug 'jceb/vim-orgmode'
+
+Plug 'mattn/emmet-vim'
+
+Plug 'tpope/vim-speeddating'
+
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -62,4 +68,7 @@ set matchpairs+=<:>
 " set screenline to always be visible
 set laststatus=2
 
+" map localleader (localleader is a leader key for chords that depend on
+" specific filetypes)
 
+let maplocalleader="\<space>"
