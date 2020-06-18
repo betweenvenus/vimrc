@@ -67,6 +67,8 @@ Plug 'mattn/emmet-vim'
 
 Plug 'tpope/vim-speeddating'
 
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -86,6 +88,9 @@ let g:org_agenda_files = ['~/Dropbox/org/journal/*.org']
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " custom settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" security feature
+set modelines=0
 
 " syntax highlighting
 syntax on
