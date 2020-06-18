@@ -132,3 +132,6 @@ set mouse=a
 
 " setting breakindent prevents indented lines from breaking
 set breakindent
+
+" make linebreaks work as expected
+set linebreak
