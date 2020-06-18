@@ -111,5 +111,4 @@ set laststatus=2
 
 " map localleader (localleader is a leader key for chords that depend on
 " specific filetypes)
-
 let maplocalleader="\<space>"
