@@ -70,6 +70,20 @@ Plug 'tpope/vim-speeddating'
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" plugin-specific settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" org-mode variables
+"
+" g:org_aggressive_conceal dictates whether formatting characters are hidden
+" (*bold text* simply becomes bold text)
+"
+" g:org_indent dictates indentation style for heading levels
+let g:org_aggressive_conceal = 1
+let g:org_indent = 1
+let g:org_agenda_files = ['~/Dropbox/org/journal/*.org']
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " custom settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -112,3 +126,9 @@ set laststatus=2
 " map localleader (localleader is a leader key for chords that depend on
 " specific filetypes)
 let maplocalleader="\<space>"
+
+" enable mouse interaction. hypocritical, but why not?
+set mouse=a
+
+" setting breakindent prevents indented lines from breaking
+set breakindent
