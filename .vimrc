@@ -67,6 +67,8 @@ Plug 'tpope/vim-speeddating'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+Plug 'preservim/nerdtree'
+
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -82,6 +84,9 @@ call plug#end()
 let g:org_aggressive_conceal = 1
 let g:org_indent = 1
 let g:org_agenda_files = ['~/Dropbox/org/journal/*.org']
+
+" disable coc warning for outdated vim
+let g:coc_disable_startup_warning = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " custom settings
