@@ -72,23 +72,6 @@ Plug 'preservim/nerdtree'
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" plugin-specific settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" org-mode variables
-"
-" g:org_aggressive_conceal dictates whether formatting characters are hidden
-" (*bold text* simply becomes bold text)
-"
-" g:org_indent dictates indentation style for heading levels
-let g:org_aggressive_conceal = 1
-let g:org_indent = 1
-let g:org_agenda_files = ['~/Dropbox/org/journal/*.org']
-
-" disable coc warning for outdated vim
-let g:coc_disable_startup_warning = 1
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " custom settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -131,6 +114,9 @@ set matchpairs+=<:>
 " set screenline to always be visible
 set laststatus=2
 
+" map leader
+let mapleader=","
+
 " map localleader (localleader is a leader key for chords that depend on
 " specific filetypes)
 let maplocalleader="\<space>"
@@ -143,3 +129,24 @@ set breakindent
 
 " make linebreaks work as expected
 set linebreak
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" plugin-specific settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" org-mode variables
+"
+" g:org_aggressive_conceal dictates whether formatting characters are hidden
+" (*bold text* simply becomes bold text)
+"
+" g:org_indent dictates indentation style for heading levels
+let g:org_aggressive_conceal = 1
+let g:org_indent = 1
+let g:org_agenda_files = ['~/Dropbox/org/journal/*.org']
+
+" disable coc warning for outdated vim
+let g:coc_disable_startup_warning = 1
+
+" NERDTree bindings?
+nnoremap <Leader>n :NERDTreeToggle<CR>
+
