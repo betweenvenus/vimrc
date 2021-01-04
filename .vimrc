@@ -69,6 +69,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'preservim/nerdtree'
 
+Plug 'pangloss/vim-javascript'
+
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
