@@ -119,11 +119,11 @@ set matchpairs+=<:>
 set laststatus=2
 
 " map leader
-let mapleader="<space>"
+let mapleader=" "
 
 " map localleader (localleader is a leader key for chords that depend on
 " specific filetypes)
-let maplocalleader="\<space>"
+let maplocalleader="\\ "
 
 " enable mouse interaction. hypocritical, but why not?
 set mouse=a
@@ -152,7 +152,7 @@ let g:org_agenda_files = ['~/Dropbox/org/journal/*.org']
 let g:coc_disable_startup_warning = 1
 
 " NERDTree bindings?
-nnoremap <Leader>n :NERDTreeToggle<CR>
+nnoremap <Leader><Leader> :NERDTreeToggle<CR>
 
 " Expand Emmet abbreviations with the tab key (cucked voice) just like in VS Code
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
@@ -160,10 +160,17 @@ imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 " With this setting enabled, all Emmet abbreviations expand with a tabbed
 " newline between them. So, for instance (_ is cursor):
 " div_
+" <tab is pressed>
+" <div>
+"      _
+" </div>
 
 let g:user_emmet_settings = {
 \  'html' : {
 \    'block_all_childless' : 1,
 \  },
 \}
+
+" case insensitive searches by default
+set ignorecase
 
